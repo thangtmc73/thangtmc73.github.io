@@ -4,7 +4,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout the latest theme
+      - name: Checkout the latest
         uses: actions/checkout@v2
         with:
           submodules: true # Fetch Hugo themes (true OR recursive)
