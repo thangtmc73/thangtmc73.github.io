@@ -76,6 +76,21 @@ a:hover {
   color: black;
 }
 
+.list-item .read-more {
+  border: none;
+  color: var(--darkMaincolor);
+}
+
+.list-item .read-more:hover {
+  background-color: var(--darkMaincolor);
+  color: black;
+}
+
+article .body a {
+  font-style: italic;
+  border-bottom: 2px solid var(--darkMaincolor);
+}
+
 .site-description a {
   color: #ddd;
 }

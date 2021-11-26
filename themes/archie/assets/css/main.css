@@ -8,10 +8,11 @@
 }
 html {
   color: #232333;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Noto Sans', Helvetica, sans-serif;;
   font-size: 15px;
   line-height: 1.6em;
 }
+
 body{
   display: block;
   margin: 8px;
@@ -26,7 +27,7 @@ body{
 }
 
 p {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Noto Sans", Helvetica, sans-serif;;
   line-height: 1.5;
 }
 
@@ -44,13 +45,12 @@ blockquote {
 }
 
 a {
-  border-bottom: 3px solid var(--maincolor);
   color: inherit;
   text-decoration: none;
 }
 a:hover {
-    background-color: var(--hovercolor);
-    color: #fff;
+  background-color: var(--hovercolor);
+  color: #fff;
 }
 
 ul {
@@ -61,7 +61,7 @@ ul li {
   text-indent: -2ch;
 }
 ul > li::before {
-  content: '* ';
+  content: '• ';
   font-weight: bold;
 }
 
@@ -138,14 +138,21 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 1em 0;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 header .main {
   font-size: 1.5rem;
 }
+
+header a {
+  border: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-size: 1.2rem;
   margin-top: 2em;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 h1::before { color: var(--maincolor); content: '# '; }
@@ -163,6 +170,7 @@ h6::before { color: var(--maincolor); content: '###### '; }
 /* Footer */
 footer {
   margin-top: 1em;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 /* Common */
@@ -179,7 +187,23 @@ article .title {
   margin-bottom: 1em;
 }
 
+article .body a {
+  text-decoration: underline;
+}
 
+.list-item h1 a {
+  border: none;
+}
+
+.list-item .read-more {
+  border: none;
+  color: var(--maincolor);
+}
+
+.list-item .read-more:hover {
+  background-color: var(--hovercolor);
+  color: #fff;
+}
 /* Callout */
 .callout {
   background-color: var(--callouctcolor);
@@ -249,6 +273,9 @@ svg{
   text-transform: uppercase;
   top: 0;
 }
+.highlight pre code {
+  font-family: 'JetBrains Mono', monospace;
+}
 
 .highlight pre code[class=language-javaScript]::before,
 .highlight pre code[class="language-js"]::before {
@@ -312,4 +339,8 @@ table th{
 table td{
   padding: 6px 13px;
   border: 1px solid #dfe2e5;
+}
+
+.posts .post a {
+  text-decoration: underline;
 }
