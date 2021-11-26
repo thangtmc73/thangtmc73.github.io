@@ -4,6 +4,12 @@ title = "thangtmc73"
 subtitle = "Software Engineer"
 theme = "archie"
 
+# Code Highlight
+pygmentsstyle = "emacs"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+pygmentsOptions = "linenos=table"
+
 # Main menu which appears below site header.
 [[menu.main]]
 name = "Home"
