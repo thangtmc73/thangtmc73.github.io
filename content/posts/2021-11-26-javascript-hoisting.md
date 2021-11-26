@@ -1,7 +1,6 @@
 ---
 title: "Javascript Hoisting"
 date: 2021-11-26T22:47:31+07:00
-draft: true
 description: Bài viết này bàn về Hoisting trong Javascript
 categories: technical
 tags:
